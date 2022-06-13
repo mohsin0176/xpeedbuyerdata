@@ -1,0 +1,42 @@
+CREATE DATABASE buyerdata;
+CREATE TABLE phone (
+    id int(10) NOT NULL AUTO_INCREMENT,
+    code varchar(255) 
+);
+CREATE TABLE buyer (
+    id bigint NOT NULL AUTO_INCREMENT,
+    amount varchar(255),
+    buyer  varchar(255),
+    receipt-id varchar(255),
+	items varchar(255),
+	buyer-email varchar(255),
+	buyer-ip varchar(255),
+	note text(20),
+	city varchar(255),
+	phone varchar(255),
+	hash_key varchar(255),
+	entry_at date,
+	entry_by int(10) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO phone (id,phone) VALUES (1,'+880'); 
+INSERT INTO phone (id,phone) VALUES (2,'+920'); 
+INSERT INTO phone (id,phone) VALUES (3,'+110'); 
+INSERT INTO phone (id,phone) VALUES (4,'+200'); 
+INSERT INTO phone (id,phone) VALUES (5,'+330'); 
+INSERT INTO phone (id,phone) VALUES (6,'+780'); 
+
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (2104,265, 'sk mitra','jk-6589', 'shirt', 'jk@gmail.com','120.32.25.65','good to see','Dhaka','0169523689','gfsdfgsfgs','25-02-2014',1); 
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (2102,165, 'sk jitra','ju-689', 't-shirt', 'pk@gmail.com','220.32.125.65','hi to see','Barisal','0199523689','gfs2222dfgsfgs','15-02-2014',1); 
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (104,205, 'lp uitra','mk-6589', 'shirt-jiga', 'kl@gmail.com','190.32.25.65','many to see','Comilla','0189523689','gfsd8899rrro22fgsfgs','25-03-2014',1); 
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (2522,865, 'ski mjitra','ru-689', 'l-shirt', 'op@gmail.com','20.32.125.65','hi to good','Sylhet','0189523689','gfs22211dfgsfgs','15-02-2012',1); 
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (8104,1265, 'sopk mitra','jk-789', 'o-shirt', 'jk@yahoo.com','220.32.25.65','good like to see','Kurigram','0179523689','gfsdeeefgsfgs','25-02-2011',1); 
+INSERT INTO buyer (id,amount,buyer,receipt-id,items,buyer-email,buyer-ip,note,city,hash_key,entry_at,entry_by)
+VALUES (8902,225, 'ski jitra','lu-689', 'h-shirt', 'yuk@gmail.com','120.32.125.65','hi to see see','Rangpur','0119523689','gfs2222dfgsfgs#$%','15-03-2014',1); 
+

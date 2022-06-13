@@ -1,0 +1,7 @@
+
+
+1.open xampp server -> phpmyadmin
+2.go  to database section
+3.paste the sql command and run from (sql text file.txt) file.
+4.paste xpeedstudiomohsin project folder in htdocs folder like http://localhost/xampp/htdocs/xpeedstudiomohsin
+5. go url and hit by http://localhost/xpeedstudiomohsin
